@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.brand_main{
+    background-color: #f7f9f9;
+    text-align: center;
+    width: 100%;
+    height: 25rem;
+}
+.brand_main > h1{
+    line-height: 60px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+h1:after{
+    content: "";
+}
+.brand_main hr{
+    border: 2px solid #0984e3;
+    width: 25%;
+    margin-left: 600px;
+    opacity: 4.25;
+}
+.brand_main > h3{
+    font-size: 23px;
+    color: #acacac;
+}
