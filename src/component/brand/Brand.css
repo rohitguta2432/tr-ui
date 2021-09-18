@@ -7,7 +7,7 @@
     background-color: #f7f9f9;
     text-align: center;
     width: 100%;
-    height: 25rem;
+    height: 32rem;
 }
 .brand_main > h1{
     line-height: 60px;
@@ -26,4 +26,103 @@ h1:after{
 .brand_main > h3{
     font-size: 23px;
     color: #acacac;
+}
+
+
+.card_mag{
+    position: relative;
+    width: 319px;
+    height: 239px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    padding: 30px 50px;
+    background-color: #fff;
+    margin-left: 42px;
+    margin-top: 33px;
+    cursor: pointer;
+}
+.img_box{
+    position: absolute;
+    width: 89%;
+    height: 100%;
+    transform: translateY(-80px);
+    border-radius: 5px;
+    margin-left: -32px
+}
+.website_img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+.content {
+    margin-top: 80px;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+.card_content_dev{
+    position: relative;
+    width: 319px;
+    height: 239px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    padding: 30px 50px;
+    background-color: #fff;
+    cursor: pointer;
+    left: 800px;
+    top: -219px;
+}
+.img_content{
+    position: absolute;
+    width: 89%;
+    height: 100%;
+    transform: translateY(-80px);
+    border-radius: 5px;
+    margin-left: -32px
+}
+.content_dev{
+    margin-top: 99px;
+    text-decoration: upp;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+.cont_img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5); 
+}
+.card_content_dev3{
+    position: relative;
+    width: 319px;
+    height: 239px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    padding: 30px 50px;
+    background-color: #fff;
+    cursor: pointer;
+    left: 1500px;
+    top: -480px;
+}
+.img_content3{
+    position: absolute;
+    width: 89%;
+    height: 100%;
+    transform: translateY(-89px);
+    border-radius: 5px;
+    margin-left: -32px
+}
+.cont_img3{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5); 
+}
+.content_dev3 {
+    padding: 18px 25px;
+    text-align: center;
+    opacity: 1;
+    font-size: 15px;
+    display: inline;
+    font-family: 'Open Sans', sans-serif;
 }
