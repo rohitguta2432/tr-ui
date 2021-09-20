@@ -22,7 +22,7 @@ const CarouselImj = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={window.location.origin + '/images/images.jpeg'}
+                        src={window.location.origin + '/images/web-1668927_1920.jpg'}
                         alt="Second slide"
                     />
 
@@ -30,7 +30,7 @@ const CarouselImj = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={window.location.origin + '/images/web_design.jpg'}
+                        src={window.location.origin + '/images/work-731198_1920.jpg'}
                         alt="Third slide"
                     />
                 </Carousel.Item>
