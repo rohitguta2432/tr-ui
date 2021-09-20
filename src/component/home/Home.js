@@ -9,7 +9,7 @@ const Home = () => {
         <>
             <CarouselImj />
             <Brand />
-            {/* <Footer /> */}
+            <Footer />
         </>
     )
 }

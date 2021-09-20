@@ -1,6 +1,9 @@
 import Modal from 'react-modal';
 import React, { useState } from 'react'
 import './Navbar.css'
+import {SiWhatsapp} from 'react-icons/si'
+import { Link } from 'react-router-dom';
+import {ImCross} from 'react-icons/im'
 
 
 const Navbar = () => {
@@ -27,6 +30,7 @@ const Navbar = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(formObject);
+
     }
     return (
         <>
@@ -47,7 +51,12 @@ const Navbar = () => {
             </nav>
             <Modal isOpen={isOpen}
                 className="modal_content">
+                    <ImCross className="closeModel" onClick={closeModal}/>
                 <form action="" onSubmit={handleSubmit}>
+                
+                    <a href="https://web.whatsapp.com/send?phone=+918130313297" target="_blank">
+                         <SiWhatsapp className="icon_message"></SiWhatsapp>
+                    </a>
                     <label htmlFor="textname" className="textname">Free consultation</label>
                     <div className="details_main_container">
                         <div className="box">
