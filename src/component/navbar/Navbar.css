@@ -6,7 +6,7 @@
     width: 100%;
     color: white;
     height: 3rem;
-    
+    position: fixed;
 }
 .logo{
     font-size: 1.5rem;
@@ -56,12 +56,13 @@
     background-color: #ffffff;
     width: 40rem;
     height: 37rem;
-    margin-top: 243px;
+    margin-top: auto;
     margin-left: 400px;
     outline: none;
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center; 
+    position: relative; 
 }
 .details_main_container{
     margin-top: 10px;
@@ -109,8 +110,8 @@ input[type="submit"]{
     font-size: 22px;
     color: green;
 }
-.closeModel{
+.close_modals{
     position: absolute;
-    top: 259px;
-    cursor: pointer;
+    top: 0;
+    right: 60px;
 }

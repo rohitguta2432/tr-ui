@@ -1,13 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-
 }
 .brand_main{
     background-color: #f7f9f9;
     text-align: center;
     width: 100%;
     height: 32rem;
+    
 }
 .brand_main > h1{
     line-height: 60px;
@@ -27,8 +27,6 @@ h1:after{
     font-size: 23px;
     color: #acacac;
 }
-
-
 .card_mag{
     position: relative;
     width: 319px;
@@ -62,16 +60,17 @@ h1:after{
 }
 .card_content_dev{
     position: relative;
-    width: 319px;
+    width: 315px;
     height: 239px;
     border-radius: 10px;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 20px rgb(0 0 0 / 50%);
     transition: 0.3s;
     padding: 30px 50px;
     background-color: #fff;
     cursor: pointer;
-    left: 800px;
-    top: -219px;
+    left: 950px;
+    top: -239px;
+    right: 74px;
 }
 .img_content{
     position: absolute;
@@ -97,13 +96,13 @@ h1:after{
     width: 319px;
     height: 239px;
     border-radius: 10px;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 20px rgb(0 0 0 / 50%);
     transition: 0.3s;
     padding: 30px 50px;
     background-color: #fff;
     cursor: pointer;
-    left: 1500px;
-    top: -480px;
+    top: -439px;
+    right: -487px;
 }
 .img_content3{
     position: absolute;
@@ -125,4 +124,32 @@ h1:after{
     font-size: 15px;
     display: inline;
     font-family: 'Open Sans', sans-serif;
+}
+@media only screen and (min-width:1400px){
+    .card_content_dev{
+    position: relative;
+    width: 315px;
+    height: 239px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgb(0 0 0 / 50%);
+    transition: 0.3s;
+    padding: 30px 50px;
+    background-color: #fff;
+    cursor: pointer;
+    left: 1500px;
+    top: -239px;
+   }
+   .card_content_dev3 {
+    position: relative;
+    width: 319px;
+    height: 239px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgb(0 0 0 / 50%);
+    transition: 0.3s;
+    padding: 30px 50px;
+    background-color: #fff;
+    cursor: pointer;
+    top: -439px;
+    right: -777px;
+}
 }

@@ -51,7 +51,10 @@ const Navbar = () => {
             </nav>
             <Modal isOpen={isOpen}
                 className="modal_content">
+                    <div className="close_modals">
                     <ImCross className="closeModel" onClick={closeModal}/>
+                    </div>
+                    
                 <form action="" onSubmit={handleSubmit}>
                 
                     <a href="https://web.whatsapp.com/send?phone=+918130313297" target="_blank">

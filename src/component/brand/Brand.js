@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Brand.css'
 import Circle from 'react-circle'
 import { CircularProgressbar } from 'react-circular-progressbar'
@@ -6,6 +6,8 @@ import 'react-circular-progressbar/dist/styles.css'
 const Brand = () => {
     const textT = `Tailor Made Websites`;
     const design = `Websites Designing`;
+    const [width, setWidth] = useState(window.innerWidth);
+        
     return (
         <>
             <div className="brand_main">
