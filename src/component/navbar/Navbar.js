@@ -2,7 +2,7 @@ import Modal from 'react-modal';
 import React, { useState } from 'react'
 import './Navbar.css'
 import {SiWhatsapp} from 'react-icons/si'
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import {ImCross} from 'react-icons/im'
 
 
@@ -15,9 +15,9 @@ const Navbar = () => {
         phone: "",
         detail: ""
     });
+    const history = useHistory();
 
     const openEnquiry = () => {
-        console.log('click');
         SetIsOpen(true);
     }
     const closeModal = () => {
@@ -32,6 +32,9 @@ const Navbar = () => {
         console.log(formObject);
 
     }
+    const openLeaning = () =>{
+        history.push("/learning");
+    }
     return (
         <>
             <nav className="navbar">
@@ -42,6 +45,7 @@ const Navbar = () => {
                     {isMobile ? <i className="fas fa-times" /> : <i className="fas fa-bars"/>}
                 </button> */}
                 <ul className={isMobile ? 'mobile-links' : 'list'}>
+                    <li className="learning" onClick={openLeaning}>Learning</li>
                     <li className="item4" onClick={openEnquiry}>Enquiry Now</li>
                     {/* <li className="item1">About Us</li>
                     <li className="item2">Contact Us</li>

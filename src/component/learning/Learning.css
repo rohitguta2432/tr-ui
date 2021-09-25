@@ -1,0 +1,11 @@
+.card{
+    width: 45rem;
+    margin: 20px 75px 3px 27px;
+}
+.card-content{
+    display: grid;
+    grid-row: 3;
+}
+.players{
+    margin: 1px 0px 0px 30px;
+}
