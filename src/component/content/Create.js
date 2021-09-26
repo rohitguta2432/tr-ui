@@ -34,7 +34,7 @@ const Create = () => {
                             >
                         </CKEditor>
                         </div>
-
+                        
                     </div>
 
                 </form>
