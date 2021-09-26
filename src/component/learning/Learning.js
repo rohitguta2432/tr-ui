@@ -19,27 +19,27 @@ const Learning = () => {
 
     return (
         <>
-
-            {
-                content.map((value) => {
-                    return (<>
-                        <div className="card card-content" key={value.contentId}>
-                            <div className="players" >
-                                <ReactPlayer url={value.videoUrl}
-                                    playing={true}
-                                    controls={true}
-                                    light={value.imgUrl}
-                                    volume={1} />
+            <div className="container">
+                {
+                    content.map((value) => {
+                        return (<>
+                            <div className="card-content" key={value.contentId}>
+                                <div className="players" >
+                                    <ReactPlayer url={value.videoUrl}
+                                        playing={true}
+                                        controls={true}
+                                        light={value.imgUrl}
+                                        volume={1} />
+                                </div>
+                                <p>
+                                    {value.content}
+                                </p>
                             </div>
-                            <p>
-                                {value.content}
-                            </p>
-                        </div>
-                    </>);
-                })
-            }
+                        </>);
+                    })
+                }
 
-
+            </div>
         </>
     )
 }
