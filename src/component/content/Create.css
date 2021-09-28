@@ -49,3 +49,21 @@ input[type="text"]{
     font-family: monospace;
     box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.8);
 }
+.submitContents{
+    background-color: green !important;
+    color: #fff;
+    margin-top: 6px;
+    margin-right: 55px !important;
+    position: absolute;
+    left: 270px;
+}
+@media (min-width:1000px){
+    .submitContents{
+        background-color: green !important;
+        color: #fff;
+        margin-top: 6px;
+        margin-right: 55px !important;
+        position: absolute;
+        left: 700px;
+    }
+}

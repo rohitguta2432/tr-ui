@@ -29,10 +29,11 @@ const Learning = () => {
                                         playing={true}
                                         controls={true}
                                         light={value.imgUrl}
-                                        volume={1} />
+                                        volume={1} 
+                                        className="reactPlayers"/>
                                 </div>
                                 <p>
-                                    {value.content}
+                                    {value.title}
                                 </p>
                             </div>
                         </>);

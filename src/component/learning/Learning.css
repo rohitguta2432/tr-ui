@@ -13,3 +13,41 @@
 .players{
     margin: 1px 0px 0px 30px;
 }
+ p{
+     margin-top: 5px;
+    text-align: center;
+    font-size: 25px;
+    font-family: monospace;
+}
+
+@media only screen and (max-width:480px){
+     .container{
+        display: inline-block;
+    }
+    .players{
+        padding: 0px 6px;
+        object-fit: contain;
+    }
+    .reactPlayers{
+        width: 8rem !important;
+        height: auto !important;
+        margin-top: 42px !important;
+        text-align: center !important;
+    }
+    .card-content{
+        width: 18rem;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .react-player__preview{
+        margin-bottom: 35px !important;
+    }
+    p{
+        margin-top: 5px;
+       text-align: center;
+       font-size: 15px;
+       font-family: monospace;
+   }
+}
