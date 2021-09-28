@@ -26,14 +26,15 @@ const Create = () => {
     return (
         <>
             <div className="form_container">
+
                 <form action="" onSubmit={submitContent}>
                     <div className="container_content">
                         <div className="title_header">
                             <div className="form_title">
-                                <input type="text" name="title" id="title" placeholder="title" onChange={handleInput} value={content.title} />
+                                <input type="text" name="title" id="title" placeholder="title.." onChange={handleInput} value={content.title} />
                             </div>
                             <div className="form_header">
-                                <input type="text" name="header" id="header" placeholder="header" onChange={handleInput} value={content.header} />
+                                <input type="text" name="header" id="header" placeholder="header.." onChange={handleInput} value={content.header} />
                             </div>
                         </div>
                         <div className="upload_all">
@@ -41,22 +42,22 @@ const Create = () => {
                                 <label htmlFor="imageFile" className="label_upload">Upload Image</label>
                                 <br />
                                 <input type="file" id="imageFile" accept="image/*" name="imageFile" placeholder="image upload"
-                                    onChange={handleInput} value={content.imageFile} />
+                                    onChange={handleInput} value={content.imageFile}  className="imageFile"/>
                             </div>
                             <div className="video_upload">
                                 <label htmlFor="videoFile" className="label_upload">Upload File</label>
                                 <br />
-                                <input type="file" id="videoFile" name="videoFile" placeholder="video uplad" onChange={handleInput} value={content.videoFile} />
+                                <input type="file" id="videoFile" className="videoFile" name="videoFile" placeholder="video uplad" onChange={handleInput} value={content.videoFile} />
                             </div>
                         </div>
                         <div className="ck_editor">
                             <CKEditor
                                 initData={<p>Hello from TR</p>}>
-                                onChange={ ( event, editor ) => {
-                                const data = editor.getData();
-                                console.log( { event, editor, data });
+                                onChange={(event, editor) => {
+                                    const data = editor.getData();
+                                    console.log({ event, editor, data });
                                 }}
-                           </CKEditor>
+                            </CKEditor>
                         </div>
                         <input type="submit" value="submit" className="submitContents" />
                     </div>

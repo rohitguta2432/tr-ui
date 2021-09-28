@@ -1,13 +1,16 @@
 .form_container{
     height: 100vh;
     width: 100vw;
+    background-image: linear-gradient(#fff,#0984e3);
     display: grid;
     place-items: center;
 }
 .container_content{
-    background-color: #f1f2f6;
+    background-color: #ffffff;
     width: 82vw;
     height: 69vh;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
 }
 .title_header{
     display: flex;
@@ -15,13 +18,15 @@
     padding-top: 7px;
 }
 input[type="text"]{
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 200px;
+    font-family: monospace;
 }
 .upload_all{
     display: flex;
     justify-content: space-evenly;
     padding-top: 100px;
+    border: 1px solid steelblue;
 }
 .img_upload{
     background-color: #fff;
@@ -47,7 +52,7 @@ input[type="text"]{
     margin-top: 3px;
     margin-bottom: 5px;
     font-family: monospace;
-    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.8);
+    box-shadow: 5px 6px 3px rgb(0 0 0 / 80%);
 }
 .submitContents{
     background-color: green !important;
@@ -65,5 +70,75 @@ input[type="text"]{
         margin-right: 55px !important;
         position: absolute;
         left: 700px;
+    }
+}
+@media screen and (max-width:480px){
+    input[type="text"]{
+        width: 17rem;
+        font-size: 20px;
+        font-weight: 200px;
+        font-family: monospace;
+        margin: 5px 0px 13px 11px;
+        border: 1px solid rgb(24, 23, 23);
+    }
+    .title_header{
+        display: inline-block;
+        
+    }
+    .container_content {
+        background-color: #ffffff;
+    width: 82vw;
+    height: 30rem;
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 80%);
+    border-radius: 5px;
+    margin-top: 28px;
+    position: absolute;
+    left: 26px;
+    top: 60px;
+    }
+    .upload_all {
+        display: inline-block;
+        border: 1px solid black;
+        width: 17rem;
+        margin-left: 12px;
+        height: 14rem;
+    }
+    .ck_editor{
+        display: none;
+    }
+    .submitContents{
+    background-color: green !important;
+    color: #fff;
+    /* margin-top: 6px; */
+    margin-right: 55px !important;
+    position: absolute;
+    left: 16px;
+    bottom: 52px;
+    }
+    .img_upload{
+        background-color: #fff;
+        width: 71vw;
+        position: absolute;
+        bottom: 257px;
+        border: 1px solid black;
+        margin-left: 7px;
+    }
+    .video_upload{
+        background-color: #fff;
+        width: 71vw;
+        position: absolute;
+        bottom: 161px;
+        border: 1px solid black;
+        margin-left: 7px;
+    }
+    .imageFile{
+        position: absolute;
+        left: 26px;
+        bottom: 5px;
+    }
+    .videoFile{
+        position: absolute;
+        left: 26px;
+        bottom: 5px;
     }
 }
