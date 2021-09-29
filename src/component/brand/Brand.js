@@ -16,7 +16,7 @@ const Brand = () => {
             </h1>
                 <hr />
                 <h3>Our Solution to business Include :</h3>
-
+                <div className="parent_brand">
                 <div className="card_mag">
                     <div className="img_box">
                         <img src={window.location.origin + '/images/custome_soft.png'} alt="" className="website_img"/>
@@ -43,8 +43,8 @@ const Brand = () => {
                         <p>We optimize the websites which are responsive to all devices.</p>
                     </div>
                 </div>
-
             </div>
+        </div>
         </>
     )
 }

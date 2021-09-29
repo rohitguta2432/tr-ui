@@ -18,7 +18,7 @@ const Navbar = () => {
     const history = useHistory();
 
     const openEnquiry = () => {
-        SetIsOpen(true);
+        history.push('/contact');
     }
     const closeModal = () => {
         SetIsOpen(false);
@@ -35,54 +35,23 @@ const Navbar = () => {
     const openLeaning = () =>{
         history.push("/learning");
     }
+
+    const goHome = () =>{
+        history.push('/');
+    }
+
     return (
         <>
             <nav className="navbar">
-                <label className="logo">
+                <label className="logo" onClick={goHome}>
                     TR
                 </label>
-                {/* <button className="mobile-menu-icon">
-                    {isMobile ? <i className="fas fa-times" /> : <i className="fas fa-bars"/>}
-                </button> */}
+               
                 <ul className={isMobile ? 'mobile-links' : 'list'}>
                     <li className="learning" onClick={openLeaning}>Learning</li>
                     <li className="item4" onClick={openEnquiry}>Enquiry Now</li>
-                    {/* <li className="item1">About Us</li>
-                    <li className="item2">Contact Us</li>
-                    <li className="item3">Services</li> */}
                 </ul>
-
             </nav>
-            <Modal isOpen={isOpen}
-                className="modal_content">
-                    <div className="close_modals">
-                    <ImCross className="closeModel" onClick={closeModal}/>
-                    </div>
-                    
-                <form action="" onSubmit={handleSubmit}>
-                
-                    <a href="https://web.whatsapp.com/send?phone=+918130313297" target="_blank">
-                         <SiWhatsapp className="icon_message"></SiWhatsapp>
-                    </a>
-                    <label htmlFor="textname" className="textname">Free consultation</label>
-                    <div className="details_main_container">
-                        <div className="box">
-                            <input type="text" id="name" name="name" value={formObject.name} placeholder="your name" autoComplete="off" onChange={handlerequest} />
-                        </div>
-
-                        <div className="box">
-                            <input type="text" id="email" name="email" value={formObject.email} placeholder="email address" autoComplete="off" onChange={handlerequest} />
-                        </div>
-                        <div className="box">
-                            <input type="text" id="phone" name="phone" value={formObject.phone} placeholder="phone" autoComplete="off" onChange={handlerequest} />
-                        </div>
-                        <div className="box">
-                            <textarea className="details" id="detail" name="detail" cols="30" rows="5" value={formObject.detail} placeholder="description" onChange={handlerequest} autoComplete="off" />
-                        </div>
-                    </div>
-                    <input type="submit" value="Submit" />
-                </form>
-            </Modal>
         </>
     )
 }

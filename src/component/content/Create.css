@@ -109,7 +109,6 @@ input[type="text"]{
     .submitContents{
     background-color: green !important;
     color: #fff;
-    /* margin-top: 6px; */
     margin-right: 55px !important;
     position: absolute;
     left: 16px;
@@ -141,4 +140,5 @@ input[type="text"]{
         left: 26px;
         bottom: 5px;
     }
+    
 }

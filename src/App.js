@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './component/home/Home';
 import Learning from './component/learning/Learning';
 import Create from './component/content/Create';
+import Contact from './component/contact/Contact';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <Route path="/" exact component={Home} />
           <Route path="/learning" component={Learning} />
           <Route path="/content-create" component={Create} />
+          <Route path="/contact" exact component={Contact}/>
         </Switch>
       </Router>
     </>

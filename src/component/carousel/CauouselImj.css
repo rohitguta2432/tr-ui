@@ -4,5 +4,17 @@
 }
 .carousel_main  img{
     width: auto;
-    max-height: 600px;
+    max-height: 30rem;
+}
+@media only screen and (max-width:480px){
+    .coursel_ {
+        max-height: 15rem !important;
+    }
+    .carousel_main  img{
+        width: auto;
+        max-height: 10rem;
+    }
+    .carousel-item{
+        max-height: 8rem !important;
+    }
 }

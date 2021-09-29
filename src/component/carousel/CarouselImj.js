@@ -10,6 +10,7 @@ const CarouselImj = () => {
     };
     return (
         <>
+        <div className="coursel_">
             <Carousel activeIndex={index} onSelect={handleSelect} className="carousel_main">
                 <Carousel.Item>
                     <img
@@ -35,6 +36,7 @@ const CarouselImj = () => {
                     />
                 </Carousel.Item>
             </Carousel>
+            </div>
         </>
     )
 }
